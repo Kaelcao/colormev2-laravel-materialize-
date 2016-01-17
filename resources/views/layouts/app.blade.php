@@ -4,9 +4,9 @@
 <head>
     <title>App Name - @yield('title')</title>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="{{ URL::asset('public/css/materialize.min.css') }}"/>
-    <link rel="stylesheet" href="{{ URL::asset('public/css/common.css') }}"/>
-    <script src="{{URL::asset('public/js/jquery-1.12.0.min.js')}}">
+    <link rel="stylesheet" href="{{ URL::asset('css/materialize.min.css') }}"/>
+    <link rel="stylesheet" href="{{ URL::asset('css/common.css') }}"/>
+    <script src="{{URL::asset('js/jquery-1.12.0.min.js')}}">
     </script>
 </head>
 <body>
@@ -62,7 +62,7 @@
 @show
 
 
-<script src="{{URL::asset('public/js/materialize.min.js')}}">
+<script src="{{URL::asset('js/materialize.min.js')}}">
 </script>
 <script type="text/javascript">
     $(document).ready(function () {
