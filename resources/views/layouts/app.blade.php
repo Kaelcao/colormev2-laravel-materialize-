@@ -12,25 +12,21 @@
 <body>
 @section('sidebar')
     <header>
-        <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper">
-                    <a href="#!" onclick="return false" class="brand-logo">colorME</a>
-                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="#">Test</a></li>
-
-                    </ul>
-                    <ul class="side-nav" id="mobile-demo">
-                        <li><a href="#">Test</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <nav>
+            <ul class="right">
+                <li><a href="#!">Logout</a></li>
+            </ul>
+            <ul id="slide-out" class="side-nav fixed">
+                <li><a href="#!">Dashboard</a></li>
+                <li><a href="#!">Telesale</a></li>
+                <li><a href="#!">Danh sách đăng kí</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        </nav>
     </header>
 @show
 <main>
-@yield('content')
+    @yield('content')
 </main>
 @section('footer')
     <footer class="page-footer">
@@ -67,6 +63,7 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $(".button-collapse").sideNav();
+
     });
 </script>
 </body>
