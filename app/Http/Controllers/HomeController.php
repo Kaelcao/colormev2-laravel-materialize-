@@ -16,7 +16,7 @@ class HomeController extends Controller
     {
 
     }
-
+	/* Hello from the other sight */
     /**
      * Show the application dashboard.
      *
