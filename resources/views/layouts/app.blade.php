@@ -12,16 +12,18 @@
 <body>
 @section('sidebar')
     <header>
+
+
+        <ul id="slide-out" class="side-nav fixed">
+            <li><a href="#!">Dashboard</a></li>
+            <li><a href="#!">Telesale</a></li>
+            <li><a href="#!">Danh sách đăng kí</a></li>
+        </ul>
         <nav>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
             <ul class="right">
                 <li><a href="#!">Logout</a></li>
             </ul>
-            <ul id="slide-out" class="side-nav fixed">
-                <li><a href="#!">Dashboard</a></li>
-                <li><a href="#!">Telesale</a></li>
-                <li><a href="#!">Danh sách đăng kí</a></li>
-            </ul>
-            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         </nav>
     </header>
 @show
